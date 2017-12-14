@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.csii.vallain.MainActivity">
+    tools:context="com.csii.vallain.MainActivity"
+    android:background="@color/colorAccent">
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,4 +52,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="error"/>
+    <com.nightonke.jellytogglebutton.JellyToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:jtbJelly="itself"
+        />
 </LinearLayout>

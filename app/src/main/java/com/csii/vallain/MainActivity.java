@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
+import com.nightonke.jellytogglebutton.JellyToggleButton;
+import com.nightonke.jellytogglebutton.JellyTypes.Jelly;
 
 import es.dmoral.toasty.Toasty;
 
@@ -74,5 +76,9 @@ public class MainActivity extends AppCompatActivity {
                 Toasty.warning(MainActivity.this, "警告Toasty").show();
             }
         });
+
+        JellyToggleButton jellyToggleButton = (com.nightonke.jellytogglebutton.JellyToggleButton)
+                findViewById(R.id.toggleButton);
+        jellyToggleButton.setJelly(Jelly.LAZY_TREMBLE_HEAD_FATTY);
     }
 }
