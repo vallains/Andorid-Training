@@ -92,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
         switchButton.setOnCheckedChangeListener(new SwitchButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(SwitchButton view, boolean isChecked) {
-                //TODO do your job
             }
         });
 

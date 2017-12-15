@@ -37,6 +37,14 @@
             android:layout_height="wrap_content"
             android:text="success" />
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/info"
             android:layout_width="wrap_content"
@@ -54,8 +62,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="error" />
-    </LinearLayout>
 
+    </LinearLayout>
 
     <com.nightonke.jellytogglebutton.JellyToggleButton
         android:id="@+id/toggleButton"
@@ -70,12 +78,29 @@
         app:sb_checked_color='#009688'
         app:sb_shadow_effect="true"
         app:sb_show_indicator="false" />
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation_view"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        app:lottie_autoPlay="true"
         app:lottie_fileName="a.json"
-        app:lottie_loop="false"
-        app:lottie_autoPlay="true" />
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="d.json"
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="c.json"
+        app:lottie_loop="true" />
 
 </LinearLayout>
