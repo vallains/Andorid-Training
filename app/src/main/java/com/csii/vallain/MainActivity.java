@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 import com.nightonke.jellytogglebutton.JellyToggleButton;
 import com.nightonke.jellytogglebutton.JellyTypes.Jelly;
+import com.suke.widget.SwitchButton;
 
 import es.dmoral.toasty.Toasty;
 
@@ -80,5 +81,20 @@ public class MainActivity extends AppCompatActivity {
         JellyToggleButton jellyToggleButton = (com.nightonke.jellytogglebutton.JellyToggleButton)
                 findViewById(R.id.toggleButton);
         jellyToggleButton.setJelly(Jelly.LAZY_TREMBLE_HEAD_FATTY);
+        SwitchButton switchButton = (SwitchButton) findViewById(R.id.switch_button);
+        switchButton.setChecked(true);
+        switchButton.isChecked();
+        switchButton.toggle();     //switch state
+        switchButton.toggle(true);//switch without animation
+        switchButton.setShadowEffect(false);//disable shadow effect
+        switchButton.setEnabled(true);//disable button
+        switchButton.setEnableEffect(true);//disable the switch animation
+        switchButton.setOnCheckedChangeListener(new SwitchButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(SwitchButton view, boolean isChecked) {
+                //TODO do your job
+            }
+        });
+
     }
 }
