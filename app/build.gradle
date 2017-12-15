@@ -29,5 +29,7 @@ dependencies {
     compile 'com.muddzdev:styleabletoast:1.0.9'
     compile 'com.github.GrenderG:Toasty:1.2.5'
     compile 'com.nightonke:jellytogglebutton:1.0.2'
+    compile 'com.github.zcweng:switch-button:0.0.3@aar'
+    compile 'com.airbnb.android:lottie:1.0.1'
     testCompile 'junit:junit:4.12'
 }
