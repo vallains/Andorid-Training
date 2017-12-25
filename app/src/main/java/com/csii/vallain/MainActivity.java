@@ -1,5 +1,6 @@
 package com.csii.vallain;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         normal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent =new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(intent);
                 Toasty.normal(MainActivity.this, "普通Toasty").show();
             }
         });
