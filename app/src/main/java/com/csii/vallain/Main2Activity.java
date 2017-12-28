@@ -20,8 +20,6 @@ public class Main2Activity extends AppCompatActivity {
         chart.setInteractive(true);
         chart.setZoomType(ZoomType.HORIZONTAL);
         chart.setContainerScrollEnabled(true, ContainerScrollType.HORIZONTAL);
-
-
     }
 
 }
