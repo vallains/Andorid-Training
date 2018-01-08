@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 import com.nightonke.jellytogglebutton.JellyToggleButton;
 import com.nightonke.jellytogglebutton.JellyTypes.Jelly;
@@ -17,10 +18,17 @@ import es.dmoral.toasty.Toasty;
 
 public class MainActivity extends AppCompatActivity {
 
+    LottieAnimationView animation_view;
+    LottieAnimationView animation_view1;
+    LottieAnimationView animation_view2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        animation_view = (LottieAnimationView)findViewById(R.id.animation_view);
+        animation_view1 = (LottieAnimationView)findViewById(R.id.animation_view1);
+        animation_view2 = (LottieAnimationView)findViewById(R.id.animation_view2);
         Button buttonXml = (Button) findViewById(R.id.button);
         buttonXml.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,6 +103,26 @@ public class MainActivity extends AppCompatActivity {
         switchButton.setOnCheckedChangeListener(new SwitchButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(SwitchButton view, boolean isChecked) {
+            }
+        });
+
+        Button start_anim = (Button) findViewById(R.id.start_anim);
+        start_anim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                animation_view.playAnimation();
+                animation_view1.playAnimation();
+                animation_view2.playAnimation();
+            }
+        });
+
+        Button stop_anim = (Button) findViewById(R.id.stop_anim);
+        stop_anim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                animation_view.cancelAnimation();
+                animation_view1.cancelAnimation();
+                animation_view2.cancelAnimation();
             }
         });
 

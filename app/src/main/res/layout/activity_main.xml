@@ -83,7 +83,7 @@
         android:id="@+id/animation_view"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:lottie_autoPlay="true"
+        app:lottie_autoPlay="false"
         app:lottie_fileName="a.json"
         app:lottie_loop="true" />
 
@@ -102,5 +102,21 @@
         app:lottie_autoPlay="true"
         app:lottie_fileName="c.json"
         app:lottie_loop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/start_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"/>
+        <Button
+            android:id="@+id/stop_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop"/>
+    </LinearLayout>
 
 </LinearLayout>
