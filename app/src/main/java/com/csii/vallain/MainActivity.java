@@ -12,6 +12,10 @@ import com.airbnb.lottie.LottieAnimationView;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 import com.nightonke.jellytogglebutton.JellyToggleButton;
 import com.nightonke.jellytogglebutton.JellyTypes.Jelly;
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.FormatStrategy;
+import com.orhanobut.logger.Logger;
+import com.orhanobut.logger.PrettyFormatStrategy;
 import com.suke.widget.SwitchButton;
 
 import es.dmoral.toasty.Toasty;
@@ -21,11 +25,23 @@ public class MainActivity extends AppCompatActivity {
     LottieAnimationView animation_view;
     LottieAnimationView animation_view1;
     LottieAnimationView animation_view2;
+    private String JSON_CONTENT = "{\"weatherinfo\":{\"city\":\"北京\",\"cityid\":\"101010100\"," +
+            "\"temp\":\"18\",\"WD\":\"东南风\",\"WS\":\"1级\",\"SD\":\"17%\",\"WSE\":\"1\"," +
+            "\"time\":\"17:05\",\"isRadar\":\"1\",\"Radar\":\"JC_RADAR_AZ9010_JB\"," +
+            "\"njd\":\"暂无实况\",\"qy\":\"1011\",\"rain\":\"0\"}}";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        FormatStrategy formatStrategy = PrettyFormatStrategy.newBuilder()
+                .showThreadInfo(true)  //（可选）是否显示线程信息。 默认值为true
+                .methodCount(2)         // （可选）要显示的方法行数。 默认2
+                .methodOffset(5)        // （可选）隐藏内部方法调用到偏移量。 默认5
+                .tag("wangpu")   //（可选）每个日志的全局标记。 默认PRETTY_LOGGER
+                .build();
+        Logger.addLogAdapter(new AndroidLogAdapter(formatStrategy));
+        Logger.json(JSON_CONTENT);
         animation_view = (LottieAnimationView)findViewById(R.id.animation_view);
         animation_view1 = (LottieAnimationView)findViewById(R.id.animation_view1);
         animation_view2 = (LottieAnimationView)findViewById(R.id.animation_view2);
