@@ -42,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
                 .build();
         Logger.addLogAdapter(new AndroidLogAdapter(formatStrategy));
         Logger.json(JSON_CONTENT);
+        Logger.d("debug");
+        Logger.e("error");
+        Logger.w("warning");
+        Logger.v("verbose");
+        Logger.i("information");
+        Logger.wtf("wtf!!!!");
         animation_view = (LottieAnimationView)findViewById(R.id.animation_view);
         animation_view1 = (LottieAnimationView)findViewById(R.id.animation_view1);
         animation_view2 = (LottieAnimationView)findViewById(R.id.animation_view2);
