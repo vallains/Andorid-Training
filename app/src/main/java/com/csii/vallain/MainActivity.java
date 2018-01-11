@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         Logger.d("debug12");
         Logger.v("verbose");
         Logger.i("information");
+        Logger.i("information");
         Logger.wtf("wtf!!!!");
         animation_view = (LottieAnimationView)findViewById(R.id.animation_view);
         animation_view1 = (LottieAnimationView)findViewById(R.id.animation_view1);
