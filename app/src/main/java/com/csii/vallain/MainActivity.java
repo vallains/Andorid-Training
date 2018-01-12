@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         Logger.json(JSON_CONTENT);
         Logger.d("debug");
         Logger.e("error");
+        Logger.e("error1");
         Logger.w("warning");
         Logger.d("debug1");
         Logger.d("debug12");
