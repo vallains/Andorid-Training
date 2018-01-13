@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         Logger.addLogAdapter(new AndroidLogAdapter(formatStrategy));
         Logger.json(JSON_CONTENT);
         Logger.d("debug");
+        Logger.d("debug1");
         Logger.e("error");
         Logger.e("error1");
         Logger.w("warning");
