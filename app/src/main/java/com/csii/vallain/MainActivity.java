@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         Logger.e("error1");
         Logger.w("warning");
         Logger.d("debug1");
+        Logger.d("debug1");
         Logger.d("debug12");
         Logger.v("verbose");
         Logger.i("information");
