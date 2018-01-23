@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
         Logger.v("verbose");
         Logger.i("information");
         Logger.i("information");
-        Logger.i("information");
         Logger.wtf("wtf!!!!");
         Logger.wtf("wtf!!!!");
         Logger.wtf("wtf!!!!");
