@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
         Logger.i("information");
         Logger.wtf("wtf!!!!");
         Logger.wtf("wtf!!!!");
-        Logger.wtf("wtf!!!!");
         animation_view = (LottieAnimationView)findViewById(R.id.animation_view);
         animation_view1 = (LottieAnimationView)findViewById(R.id.animation_view1);
         animation_view2 = (LottieAnimationView)findViewById(R.id.animation_view2);
