@@ -36,4 +36,5 @@ dependencies {
     compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
     testCompile 'junit:junit:4.12'
     compile 'com.orhanobut:logger:2.1.1'
+    compile 'com.yinglan.alphatabs:library:1.0.8'
 }
